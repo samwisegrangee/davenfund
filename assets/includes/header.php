@@ -12,8 +12,10 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="#" class="navbar-brand">Davenport</a>
-          <a href="#" class="navbar-brand">Davenfund</a>
+          <a href="#" class="navbar-brand">
+            <img src="assets/img/red-horiz-logo.png"/>
+          </a>
+          <a href="index.php" class="navbar-brand" id="df-nav-name">Davenfund</a>
           <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -30,15 +32,5 @@
       </div>
 
     </div>
-
-
-
-    <!--
-    <nav>
-      <ul>
-        <li class="navDU"><a class="clickDU" href="index.php">Davenport</a></li>
-
-      </ul>
-    </nav>-->
 
     <div class="container-fluid">

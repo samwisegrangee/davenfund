@@ -1,8 +1,8 @@
   </div>
 
-  <div class="nav navbar-inverse navbar-static-bottom">
+  <div class="nav navbar-inverse navbar-static-bottom" id="footer">
     <div class="container">
-      <p class="navbar-text pull-left">Built by Sam Granger</p>
+      <p class="navbar-text pull-left">Built by <a href="https://www.samwisegrangee.com" target="_blank">Sam Granger</a></p>
     </div>
   </div>
 
