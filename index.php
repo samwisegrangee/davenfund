@@ -7,16 +7,17 @@
   </video>
 
   <div class="video-overlay">
-    <div class="jumbotron">
+    <div class="video-overlay-text">
       <h1>The Davenfund</h1>
-      <p>...this is also an explanation of something...</p>
+      <img src="assets/img/5554 Davenfund Logo - Transparent Background.png" alt="">
+      <p>...love where you work...</p>
     </div>
   </div>
 
+  <div class="video-cta">
+    <a href="login.php"><button class="btn btn-lg">Get Started</button></a>
+  </div>
+
 </div>
-
-
-<?php
-//include 'assets/includes/gallery.php'; ?>
 
 <?php include 'assets/includes/footer.php'; ?>

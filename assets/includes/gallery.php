@@ -1,5 +1,5 @@
 <div class="gallery row">
-  <div class="gallery col-lg-12">
+  <div class="gall-head col-lg-12">
     <h3>Davenfund Gallery</h3>
   </div>
   <div class="box col-lg-3 col-md-4 col-sm-6">

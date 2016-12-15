@@ -191,19 +191,37 @@ body {
 }
 
 a {
-  color: #3e60cd;
-}
-
-a:hover, a:focus {
-  color: #223983;
   text-decoration: none;
 }
 
-.box {
-  background-color: #1a1a1a;
-  border: solid 1px #ee3124;
-  height: 200px;
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+button {
+  background-color: #ee3124;
+  color: #eee;
+}
+
+button:hover {
+  background-color: #a0160c;
+  transition: all 0.3s ease 0s;
+}
+
+.center-container {
+  margin-top: 100px;
   text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-title h1 {
+  color: #eee;
+}
+
+.center-form button {
+  width: 300px;
 }
 
 .navbar-brand img {
@@ -211,13 +229,14 @@ a:hover, a:focus {
 }
 
 #df-nav-name {
-  margin-left: 40px;
+  margin-left: 23px;
 }
 
 #footer {
+  display: block;
   position: absolute;
-  width: 100%;
   bottom: 0;
+  width: 100%;
 }
 
 .video-container {
@@ -231,29 +250,109 @@ video {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px;
   position: absolute;
   z-index: -1;
 }
 
 .video-overlay {
-  position: absolute;
+  position: relative;
+  max-width: 600px;
+  height: 400px;
+  top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
   z-index: 1;
 }
 
-.jumbotron {
-  position: absolute;
-  display: block;
-  z-index: 2;
+.video-overlay-text {
+  text-align: center;
+  padding: 20px;
+}
+
+.video-overlay-text h1 {
+  font-size: 40px;
+}
+
+.video-overlay-text img {
+  height: 200px;
+  width: 200px;
+}
+
+.video-cta {
+  position: relative;
   top: 150px;
-  left: 30px;
-  width: 500px;
-  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.video-cta button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 660px) {
+  .video-overlay {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  video {
+    display: none;
+  }
+}
+
+input[type="text"], input[type="password"] {
+  outline: none;
+  padding: 10px;
+  display: block;
+  width: 300px;
+  border-radius: 3px;
+  border: 1px solid #eee;
+  margin: 20px auto;
+}
+
+#descr {
+  height: 200px;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  color: #fff;
+  width: 300px;
+  margin: 20px auto;
+  margin-top: 0px;
+  border: 0px;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #ee3124;
+}
+
+input[type="submit"]:hover {
+  background-color: #a0160c;
+  transition: all 0.3s ease 0s;
 }
 
 .gallery {
-  padding: 0px 20px;
   text-align: center;
   display: block;
-  position: absolute;
+  position: relative;
+  margin: 60px;
+}
+
+.box {
+  background-color: #1a1a1a;
+  border: solid 1px #ee3124;
+  height: 200px;
+  text-align: center;
+}
+
+.gall-foot {
+  background-color: #191919;
+  display: block;
+  height: 60px;
+  width: 100%;
+  margin-bottom: -22px;
 }

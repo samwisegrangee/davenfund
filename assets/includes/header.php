@@ -15,7 +15,9 @@
           <a href="#" class="navbar-brand">
             <img src="assets/img/red-horiz-logo.png"/>
           </a>
-          <a href="index.php" class="navbar-brand" id="df-nav-name">Davenfund</a>
+          <a href="index.php" class="navbar-brand" id="df-nav-name">
+            <img src="assets/img/5554 Davenfund Logo - Circle.png" alt="">
+          </a>
           <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
