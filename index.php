@@ -8,7 +8,7 @@
 
   <div class="video-overlay">
     <div class="video-overlay-text">
-      <h1>The Davenfund</h1>
+      <h1 class="title">The Davenfund</h1>
       <img src="assets/img/5554 Davenfund Logo - Transparent Background.png" alt="">
       <p>...love where you work...</p>
     </div>
