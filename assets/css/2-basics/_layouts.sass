@@ -1,0 +1,51 @@
+.center-container
+  margin-top: 100px
+  text-align: center
+  max-width: 600px
+  margin-left: auto
+  margin-right: auto
+
+.center-title
+  h1
+    color: #eee
+
+
+.box-text
+  text-align: left
+  padding: 0 20px
+  margin: 0 auto
+
+  h2
+    text-align: left
+    font-size: 24px
+
+//Double Column
+
+.left-half, .right-half
+  display: inline-block
+  width: 50%
+
+.left-half
+  float:left
+
+.right-half
+  float: right
+
+.twin
+  width: 300px
+  padding: 10px
+
+.l-twin
+  float: right
+
+.r-twin
+  float: left
+
+@media (max-width: 560px)
+  .left-half, .right-half
+    display: block
+    width: 100%
+
+  .left-half, .right-half,
+  .l-twin, .r-twin
+    float: none

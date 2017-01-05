@@ -2,12 +2,16 @@
   <div class="gall-head col-lg-12">
     <h1>Davenfund Gallery</h1>
   </div>
+
   <div class="box col-lg-3 col-md-4 col-sm-6">
     <a href="profile.php">
-      <h2>Profile 1</h2>
-      <button class="btn">Like</button>
+      <div class="overlay" style="background-image: url('assets/img/avatar.jpg'); background-size: cover;">
+        <h2>Profile 1</h2>
+        <button class="btn">Like</button>
+      </div>
     </a>
   </div>
+
   <div class="box col-lg-3 col-md-4 col-sm-6">
     <a href="profile.php">
       <h2>Profile 2</h2>

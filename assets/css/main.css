@@ -183,6 +183,7 @@ td, th {
 body {
   background-color: #4d4d4d;
   height: 100%;
+  padding: 0;
   font-size: 14px;
   line-height: 1.6;
   font-family: 'Oswald', sans-serif;
@@ -193,6 +194,20 @@ body {
 
 .container-fluid {
   height: 100%;
+}
+
+.footer-container {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+footer {
+  background-color: #191919;
+  display: block;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
 }
 
 a {
@@ -225,8 +240,75 @@ button:hover {
   color: #eee;
 }
 
-.center-form button {
+.box-text {
+  text-align: left;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.box-text h2 {
+  text-align: left;
+  font-size: 24px;
+}
+
+.left-half, .right-half {
+  display: inline-block;
+  width: 50%;
+}
+
+.right-half {
+  float: right;
+}
+
+.twin {
   width: 300px;
+  padding: 10px;
+}
+
+.l-twin {
+  float: right;
+}
+
+.r-twin {
+  float: left;
+}
+
+@media (max-width: 560px) {
+  .left-half, .right-half {
+    display: block;
+    width: 100%;
+  }
+  .left-half, .right-half,
+  .l-twin, .r-twin {
+    float: none;
+  }
+}
+
+input[type="text"], input[type="password"] {
+  outline: none;
+  padding: 10px;
+  display: block;
+  width: 300px;
+  border-radius: 3px;
+  border: 1px solid #eee;
+  margin: 20px auto;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  color: #fff;
+  width: 300px;
+  margin: 20px auto;
+  margin-top: 0px;
+  border: 0px;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #ee3124;
+}
+
+input[type="submit"]:hover {
+  background-color: #a0160c;
+  transition: all 0.3s ease 0s;
 }
 
 .navbar-brand img {
@@ -309,35 +391,86 @@ video {
   }
 }
 
-input[type="text"], input[type="password"] {
-  outline: none;
-  padding: 10px;
+.overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
   display: block;
+  opacity: 0.5;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay h2 {
+  padding-top: 15px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: none;
+}
+
+.modal-container {
+  position: absolute;
+  max-width: 500px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  display: none;
+}
+
+.modal:target .modal-container {
+  top: 20px;
+}
+
+.modal-container img {
+  width: 100%;
+}
+
+.edit {
+  max-width: 300px;
+}
+
+.form-text {
+  color: #eee;
+}
+
+.radio-container {
+  text-align: left;
+  max-width: inherit;
+}
+
+.question-container .form-text {
+  text-align: left;
+}
+
+.question-container textarea {
+  border-radius: 5px;
+}
+
+.center-form {
   width: 300px;
-  border-radius: 3px;
-  border: 1px solid #eee;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
-#descr {
-  height: 200px;
+.center-form .radio-container {
+  margin-left: 5px;
 }
 
-input[type="submit"] {
-  padding: 10px;
-  color: #fff;
+.center-form button {
   width: 300px;
-  margin: 20px auto;
-  margin-top: 0px;
-  border: 0px;
-  border-radius: 3px;
-  cursor: pointer;
-  background-color: #ee3124;
-}
-
-input[type="submit"]:hover {
-  background-color: #a0160c;
-  transition: all 0.3s ease 0s;
 }
 
 .gallery {
@@ -348,16 +481,62 @@ input[type="submit"]:hover {
 }
 
 .box {
-  background-color: #1a1a1a;
-  border: solid 1px #ee3124;
+  background-color: pink;
   height: 200px;
   text-align: center;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.gall-foot {
-  background-color: #191919;
-  display: block;
-  height: 60px;
+.proposal-container {
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.proposal-container h2 {
+  padding-top: 20px;
+}
+
+.blue-box,
+.yellow-box,
+.green-box {
   width: 100%;
-  margin-bottom: -22px;
+  height: 10px;
+}
+
+.blue-box {
+  background-color: #223983;
+}
+
+.yellow-box {
+  background-color: #f4a319;
+}
+
+.green-box {
+  background-color: #003b26;
+}
+
+.profile-img {
+  max-height: 200px;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  float: right;
+}
+
+@media (max-width: 560px) {
+  .profile-img {
+    float: none;
+  }
+}
+
+.twin .btn,
+.twin .number {
+  display: inline;
+}
+
+.prop-answer-container {
+  margin: 20px;
+  text-align: left;
 }
