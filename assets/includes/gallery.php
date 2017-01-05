@@ -1,11 +1,14 @@
 <div class="gallery row">
-  <div class="gall-head col-lg-12">
+  <div class="gall-head">
     <h1>Davenfund Gallery</h1>
+    <div class="blue-box"></div>
+    <div class="yellow-box"></div>
+    <div class="green-box"></div>
   </div>
 
   <div class="box col-lg-3 col-md-4 col-sm-6">
     <a href="profile.php">
-      <div class="overlay" style="background-image: url('assets/img/avatar.jpg'); background-size: cover;">
+      <div class="overlay" style="background-image: url('assets/img/avatar.jpg');">
         <h2>Profile 1</h2>
         <button class="btn">Like</button>
       </div>

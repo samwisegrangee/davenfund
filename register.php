@@ -1,9 +1,9 @@
 <?php include 'assets/includes/header.php'; ?>
 
-<div class="center-container">
+<div class="center-container field-box">
   <div class="center-title">
     <h1>Register</h1>
-    <span>or <a href="login.php">login here</a></span>
+    <p>or <a href="login.php">Login Here</a></p>
   </div>
   <div class="center-form">
     <form action="register.php" method="POST">
@@ -12,14 +12,18 @@
       <input type="password" placeholder="and password" name="password">
       <input type="password" placeholder="confirm password" name="confirm_password">
 
+
       <!--<input type="submit">-->
 
     </form>
-    <!--REMOVE AFTER MOCKUP?-->
-    <a href="buffer.php">
+    <!--REMOVE AFTER MOCKUP for "submit"-->
+
+    <a href="everybody.php">
       <button class="btn btn-lg">Submit</button>
     </a>
   </div>
 </div>
+
+
 
 <?php include 'assets/includes/footer.php'; ?>

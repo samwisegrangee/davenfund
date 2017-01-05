@@ -19,7 +19,7 @@
          <h4>Department</h4>
          <h4>$ Requested Amount</h4>
          <h4>Type of Request</h4>
-         <h4 class="number"># Likes</h4><button class="btn"></button>
+         <button class="btn"><h4 class="number"># Likes</h4></button>
        </ul>
      </div>
    </div>

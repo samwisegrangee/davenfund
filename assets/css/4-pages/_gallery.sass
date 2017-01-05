@@ -1,14 +1,31 @@
 .gallery
+  background-color: #eee
+  margin: 70px 20px 10px 20px
+  border-radius: 10px
+
+@media (max-width: 600px)
+  .gallery
+    margin: 40px 10px
+
+.gall-head
   text-align: center
-  display: block
-  position: relative
-  margin: 60px
 
 .box
-  //background-color: $du-n-90
-  //border: solid 1px $du-p-red
-  background-color: pink
+  background-color: $du-n-90
+  border: solid 1px $du-p-grey-1
   height: 200px
   text-align: center
-  padding-left: 0
-  padding-right: 0
+  padding: 0
+
+  .overlay
+    height: 100%
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    padding: 20px
+
+    h2
+      margin-top: 0
+
+    button
+      margin-top: 60px
