@@ -1,17 +1,3 @@
-.overlay
-  position: relative
-  height: 100%
-  width: 100%
-  display: block
-  opacity: 0.5
-
-.overlay:hover
-  opacity: 1
-
-.overlay h2
-  padding-top: 15px
-
-
 .modal
   position: fixed
   top: 0
@@ -23,17 +9,23 @@
   display: none
 
 .modal-container
-  position: absolute
-  max-width: 500px
-  background: #fff
-  padding: 20px
-  border-radius: 5px
-  left: 50%
-  transform: translate(-50%)
   display: none
+  margin: 0 auto
 
 .modal:target .modal-container
   top: 20px
 
-.modal-container img
-  width: 100%
+.modal-close
+  position: fixed
+  margin-top: 55px
+  right: 50px
+
+  a
+    font-size: 30px
+    font-family: sans-serif
+    font-weight: 100
+    color: $du-p-red
+
+  &:hover
+    color: darken($du-p-red, 20%)
+    transition: all 0.3s ease 0s

@@ -1,5 +1,30 @@
+.navbar-brand img,
+.navbar-brand p
+  display: inline
+
 .navbar-brand img
   height: 25px
 
+.navbar-brand p
+  margin-left: 25px
+
 #df-nav-name
-  margin-left: 23px 
+  margin-left: 23px
+  color: #eee
+  background-color: darken($du-p-red, 10%)
+
+.navbar-brand .short-logo
+  display: none
+
+.navbar
+  border: none
+  box-shadow: 0 4px 2px -2px $du-p-black 
+
+@media (max-width: 500px)
+  .navbar-brand .long-logo
+    display: none
+
+  .navbar-brand .short-logo
+    display: inline
+  #df-nav-name
+    margin-left: 40px

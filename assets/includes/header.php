@@ -14,10 +14,11 @@
       <div class="container">
         <div class="navbar-header">
           <a href="#" class="navbar-brand">
-            <img src="assets/img/red-horiz-logo.png"/>
+            <img src="assets/img/red-horiz-logo.png" class="long-logo">
+            <img src="assets/img/red-u-logo.png" class="short-logo">
           </a>
           <a href="index.php" class="navbar-brand" id="df-nav-name">
-            <img src="assets/img/5554 Davenfund Logo - Circle.png" alt="">
+            <img src="assets/img/5554 Davenfund Logo - Circle.png" alt=""><p>Davenfund</p>
           </a>
           <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
             <span class="icon-bar"></span>
@@ -29,7 +30,7 @@
         <div class="collapse navbar-collapse navHeaderCollapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="login.php">Sign Out</a></li>
-            <li><a href="profile.php">Profile</a></li>
+            <li><a href="profile.php">Your Profile</a></li>
           </ul>
         </div>
       </div>

@@ -1,6 +1,6 @@
 <?php include 'assets/includes/header.php'; ?>
 
-<!--<div class="center-container">
+  <div class="center-container field-box">
     <div class="center-title">
       <h1>Edit Your Proposal Profile</h1>
     </div>
@@ -11,9 +11,9 @@
         <input type="text" placeholder="Dollar Amount Requesting?" name="prop-amount">
 
         <p class="form-text">Fund Request Category and Item</p>
-        <div class="radio-container">-->
+        <div class="radio-container">
                   <!--Need Item fields-->
-          <!--<input type="radio" name="fund-request" value="professional-development" checked>&nbsp;&nbsp;&nbsp;&nbsp;Professional Development<br>
+          <input type="radio" name="fund-request" value="professional-development" checked>&nbsp;&nbsp;&nbsp;&nbsp;Professional Development<br>
           <input type="radio" name="fund-request" value="equipment">&nbsp;&nbsp;&nbsp;&nbsp;Equipment<br>
           <input type="radio" name="fund-request" value="other">&nbsp;&nbsp;&nbsp;&nbsp;Other<br>
         </div>
@@ -38,18 +38,20 @@
 
 
         <p class="form-text">Upload a picture</p>
-        <input type="image" src="assets/img/file-image.svg" alt="Submit" width="48" height="48">
+        <div class="img-upload">
+          <input type="image" src="assets/img/file-image.svg" alt="Submit" width="48" height="48">
+        </div>
 
 
-        <input type="submit">
+        <!--<input type="submit">-->
 
-      </form>-->
+      </form>
       <!--REMOVE AFTER MOCKUP?-->
       <a href="everybody.php">
         <button class="btn btn-lg">Submit</button>
       </a>
 
-    <!--</div>
-  </div>-->
+    </div>
+  </div>
 
 <?php include 'assets/includes/footer.php'; ?>

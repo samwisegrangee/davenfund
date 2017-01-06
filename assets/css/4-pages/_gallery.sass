@@ -1,21 +1,43 @@
 .gallery
   background-color: #eee
-  margin: 70px 20px 10px 20px
+  margin: 70px 40px 10px 40px
   border-radius: 10px
+
+  .blue-box, .yellow-box, .green-box
+    height: 20px
+
+  .green-box
+    margin-bottom: 20px
+
 
 @media (max-width: 600px)
   .gallery
     margin: 40px 10px
 
 .gall-head
+  margin: 0 auto
+  margin-bottom: -60px
   text-align: center
+  width: 250px
+  height: 60px
 
+  h1
+    display: block
+    color: #eee
+    background-color: $du-n-90
+    padding-top: 15px
+    padding-bottom: 15px
+
+
+
+//Gallery Boxes
 .box
   background-color: $du-n-90
-  border: solid 1px $du-p-grey-1
+  border: solid 1px #eee
   height: 200px
   text-align: center
   padding: 0
+
 
   .overlay
     height: 100%
@@ -23,9 +45,17 @@
     background-repeat: no-repeat
     background-position: center
     padding: 20px
+    opacity: 0.5
 
     h2
       margin-top: 0
 
-    button
+    svg
       margin-top: 60px
+
+  .overlay:hover
+    opacity: 1
+
+@media (max-width: 800px)
+  .box .overlay
+    opacity: 1
