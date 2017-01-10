@@ -6,9 +6,9 @@
     </div>
     <div class="center-form">
       <form class="edit" action="edit.php" method="post">
-        <input type="text" placeholder="Your Proposal's Name" name="prop-name">
-        <input type="text" placeholder="Your Deparment" name="prop-dept">
-        <input type="text" placeholder="Dollar Amount Requesting?" name="prop-amount">
+        <input type="text" placeholder="Your Proposal's Name" name="prop_name">
+        <input type="text" placeholder="Your Deparment" name="prop_dept">
+        <input type="text" placeholder="Dollar Amount Requesting?" name="prop_amount">
 
         <p class="form-text">Fund Request Category and Item</p>
         <div class="radio-container">
@@ -21,19 +21,19 @@
 
         <div class="question-container">
           <p class="form-text">How will these funds help improve your role, your department, and/or DU in general?</p>
-          <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="prop-help"></textarea>
+          <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="prop_description"></textarea>
 
           <p class="form-text">How will you measure the improvements the funds provide?</p>
-          <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="prop-measure"></textarea>
+          <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="prop_measure"></textarea>
 
           <p class="form-text">Provide documentation on cost to justify requested amount.</p>
-          <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="prop-document"></textarea>
+          <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="prop_document"></textarea>
 
           <p class="form-text">Do you have any feedback on this process or program? Would you like to see this program continued?</p>
-          <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="prop-feedback"></textarea>
+          <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="prop_feedback"></textarea>
 
           <p class="form-text">Additional comments:</p>
-          <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="prop-comments"></textarea>
+          <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="prop_comments"></textarea>
         </div>
 
 

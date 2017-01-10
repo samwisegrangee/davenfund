@@ -17,9 +17,21 @@
             <img src="assets/img/red-horiz-logo.png" class="long-logo">
             <img src="assets/img/red-u-logo.png" class="short-logo">
           </a>
-          <a href="index.php" class="navbar-brand" id="df-nav-name">
-            <img src="assets/img/5554 Davenfund Logo - Circle.png" alt=""><p>Davenfund</p>
-          </a>
+
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="df-nav-name">
+              <img src="assets/img/5554 Davenfund Logo - Circle.png" alt=""><p>Davenfund</p>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="index.php">Home</a></li>
+              <li><a href="about.php">About</a></li>
+              <li><a href="everybody.php">Gallery</a></li>
+            </ul>
+          </div>
+
+
+
+
           <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -31,6 +43,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="login.php">Sign Out</a></li>
             <li><a href="profile.php">Your Profile</a></li>
+            <li><a href="about.php">About</a></li>
           </ul>
         </div>
       </div>

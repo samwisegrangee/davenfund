@@ -345,9 +345,9 @@ input[type="submit"]:hover {
   transition: all 0.3s ease 0s;
 }
 
-.navbar-brand img,
-.navbar-brand p {
-  display: inline;
+.navbar {
+  border: none;
+  box-shadow: 0 4px 2px -2px black;
 }
 
 .navbar-brand img {
@@ -358,6 +358,46 @@ input[type="submit"]:hover {
   margin-left: 25px;
 }
 
+.dropdown img,
+.dropdown p {
+  display: inline;
+  padding-top: 5px;
+}
+
+.dropdown {
+  display: inline;
+}
+
+.dropdown img {
+  height: 33px;
+  float: left;
+}
+
+.dropdown p {
+  float: right;
+  font-size: 20px;
+}
+
+.dropdown .btn {
+  height: 50px;
+  width: 150px;
+  border-radius: 0;
+}
+
+.btn-primary {
+  border: none;
+}
+
+.dropdown-menu {
+  margin-top: 16px;
+  margin-left: 22px;
+  min-width: 152px;
+  max-width: 152px;
+  border-radius: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 #df-nav-name {
   margin-left: 23px;
   color: #eee;
@@ -366,11 +406,6 @@ input[type="submit"]:hover {
 
 .navbar-brand .short-logo {
   display: none;
-}
-
-.navbar {
-  border: none;
-  box-shadow: 0 4px 2px -2px black;
 }
 
 @media (max-width: 500px) {
@@ -579,6 +614,7 @@ video {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  text-align: left;
   padding: 20px;
   opacity: 0.5;
 }

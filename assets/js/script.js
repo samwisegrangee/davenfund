@@ -50,6 +50,13 @@ $(document).ready(function() {
       window.location.hash = $("#trigger").attr("id"); //
     });
   });
+  $(function () {
+    var parent = $("#shuffle");
+    var divs = parent.children();
+    while (divs.length) {
+      parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+  });
 
 
 });

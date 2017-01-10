@@ -1,12 +1,46 @@
-.navbar-brand img,
-.navbar-brand p
-  display: inline
+.navbar
+  border: none
+  box-shadow: 0 4px 2px -2px $du-p-black
 
 .navbar-brand img
   height: 25px
 
 .navbar-brand p
   margin-left: 25px
+
+.dropdown img,
+.dropdown p
+  display: inline
+  padding-top: 5px
+
+.dropdown
+  display: inline
+
+  img
+    height: 33px
+    float: left
+
+  p
+    float: right
+    font-size: 20px
+
+  .btn
+    height: 50px
+    width: 150px
+    border-radius: 0
+
+.btn-primary
+    border: none
+
+.dropdown-menu
+  margin-top: 16px
+  margin-left: 22px
+  min-width: 152px
+  max-width: 152px
+  border-radius: 0
+  border-bottom-left-radius: 5px
+  border-bottom-right-radius: 5px
+
 
 #df-nav-name
   margin-left: 23px
@@ -16,9 +50,7 @@
 .navbar-brand .short-logo
   display: none
 
-.navbar
-  border: none
-  box-shadow: 0 4px 2px -2px $du-p-black 
+
 
 @media (max-width: 500px)
   .navbar-brand .long-logo
