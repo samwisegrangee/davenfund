@@ -185,7 +185,7 @@ html {
 }
 
 body {
-  background-color: #4d4d4d;
+  background-color: #1a1a1a;
   position: relative;
   min-height: 100%;
   margin: 0;
@@ -281,7 +281,7 @@ button:hover {
 
 .half-holder {
   width: 100%;
-  background-color: #1a1a1a;
+  background-color: #4d4d4d;
 }
 
 .left-half, .right-half {
@@ -318,14 +318,13 @@ button:hover {
   }
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], input[type="number"] {
   outline: none;
   padding: 10px;
   display: block;
   width: 300px;
   border-radius: 3px;
   border: 1px solid #eee;
-  margin: 20px auto;
 }
 
 input[type="submit"] {
@@ -347,6 +346,7 @@ input[type="submit"]:hover {
 
 .navbar {
   border: none;
+  background-color: #4d4d4d;
   box-shadow: 0 4px 2px -2px black;
 }
 
@@ -488,44 +488,6 @@ video {
   margin-top: 25px;
 }
 
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.65);
-  display: none;
-}
-
-.modal-container {
-  display: none;
-  margin: 0 auto;
-}
-
-.modal:target .modal-container {
-  top: 20px;
-}
-
-.modal-close {
-  position: fixed;
-  margin-top: 55px;
-  right: 50px;
-}
-
-.modal-close a {
-  font-size: 30px;
-  font-family: sans-serif;
-  font-weight: 100;
-  color: #ee3124;
-}
-
-.modal-close:hover {
-  color: #a0160c;
-  transition: all 0.3s ease 0s;
-}
-
 .edit {
   max-width: 300px;
 }
@@ -548,6 +510,10 @@ video {
   border-radius: 5px;
 }
 
+.file-container {
+  margin-bottom: 20px;
+}
+
 .center-form .radio-container {
   margin-left: 5px;
 }
@@ -567,16 +533,13 @@ video {
 
 .gallery {
   background-color: #eee;
-  margin: 70px 40px 10px 40px;
+  margin: 0 40px;
   border-radius: 10px;
 }
 
-.gallery .blue-box, .gallery .yellow-box, .gallery .green-box {
-  height: 20px;
-}
-
-.gallery .green-box {
-  margin-bottom: 20px;
+.gallery .row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 @media (max-width: 600px) {
@@ -586,19 +549,34 @@ video {
 }
 
 .gall-head {
-  margin: 0 auto;
-  margin-bottom: -60px;
+  width: 100%;
+  height: 100px;
+  margin-top: 100px;
   text-align: center;
-  width: 250px;
-  height: 60px;
 }
 
-.gall-head h1 {
-  display: block;
-  color: #eee;
-  background-color: #1a1a1a;
-  padding-top: 15px;
-  padding-bottom: 15px;
+.gall-head .banner {
+  height: 33px;
+  width: 100%;
+}
+
+.gall-head .blue-box {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.gall-head .gall-title {
+  text-align: center;
+  height: 100px;
+  width: 33%;
+  background-color: #ee3124;
+  color: white;
+  margin: 0 auto;
+  margin-top: -120px;
+}
+
+.gall-head .gall-title h1 {
+  padding-top: 30px;
 }
 
 .box {
@@ -621,6 +599,8 @@ video {
 
 .box .overlay h2 {
   margin-top: 0;
+  color: #eee;
+  text-shadow: 2px 2px #222;
 }
 
 .box .overlay svg {
@@ -645,6 +625,7 @@ video {
 
 .proposal-container h2 {
   padding-top: 20px;
+  color: #ee3124;
 }
 
 .blue-box,

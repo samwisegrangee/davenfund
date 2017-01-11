@@ -1,33 +1,40 @@
 .gallery
   background-color: #eee
-  margin: 70px 40px 10px 40px
+  margin: 0 40px
   border-radius: 10px
 
-  .blue-box, .yellow-box, .green-box
-    height: 20px
-
-  .green-box
-    margin-bottom: 20px
-
+  .row
+    margin-left: 0
+    margin-right: 0
 
 @media (max-width: 600px)
   .gallery
     margin: 40px 10px
 
 .gall-head
-  margin: 0 auto
-  margin-bottom: -60px
+  width: 100%
+  height: 100px
+  margin-top: 100px
   text-align: center
-  width: 250px
-  height: 60px
 
-  h1
-    display: block
-    color: #eee
-    background-color: $du-n-90
-    padding-top: 15px
-    padding-bottom: 15px
+  .banner
+    height: 33px
+    width: 100%
+  .blue-box
+    border-top-left-radius: 10px
+    border-top-right-radius: 10px
 
+  .gall-title
+    text-align: center
+    height: 100px
+    width: 33%
+    background-color: $du-p-red
+    color: white
+    margin: 0 auto
+    margin-top: -120px
+
+    h1
+      padding-top: 30px
 
 
 //Gallery Boxes
@@ -50,6 +57,8 @@
 
     h2
       margin-top: 0
+      color: #eee
+      text-shadow: 2px 2px #222
 
     svg
       margin-top: 60px

@@ -42,7 +42,8 @@
         <div class="collapse navbar-collapse navHeaderCollapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="login.php">Sign Out</a></li>
-            <li><a href="profile.php">Your Profile</a></li>
+            <li><a href="create.php">Create</a></li>
+            <li><a href="edit.php">Edit</a></li>
             <li><a href="about.php">About</a></li>
           </ul>
         </div>
