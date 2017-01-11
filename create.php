@@ -33,9 +33,9 @@ if(isset($_POST['insert']))
 
 }
 
-?>
+include('assets/includes/header.php')
 
-<?php include('assets/includes/header.php') ?>
+?>
 
 <div class="center-container field-box">
   <div class="center-title">
@@ -83,5 +83,4 @@ if(isset($_POST['insert']))
   </div>
 </div>
 
-
-</body>
+<?php include ('assets/includes/footer.php'); ?>

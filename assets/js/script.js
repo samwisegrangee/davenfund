@@ -25,31 +25,26 @@ $(document).ready(function() {
   $("h1").addClass("animated bounce");
 
 
-  //Modal Drop Downs by Id: Make sure the <a>'s all have id="[modal tag]-open"
-  $(function() {
-    $("[id$=-open]").click(function() {
-      var id = this.id;
-      var targetId = id.replace('-open', '');
-      var $target = $('#' + targetId);
-      $($target).css("display", "block");
-      $($target).css("overflow-y", "auto");
-      $("body").css("overflow", "hidden");
-      $(".modal-container").css("display", "block");
-      $("html, body").animate({
-        scrollTop: 0
-      }, "slow"); //
-    });
+  //Bring in the Login Card
+  $('.log-it').click(function() {
+    $('#video-card').fadeOut(100);
+    $('#register-card').fadeOut(100);
+    $('#login-card').fadeIn(300);
   });
 
-  $(function() {
-    $(".modal-close").click(function(e) {
-      e.preventDefault();
-      $(".modal").css("display", "none");
-      $(".modal").css("overflow-y", "");
-      $("body").css("overflow", "");
-      window.location.hash = $("#trigger").attr("id"); //
-    });
+  //Bring in the Register Card
+  $('.reg-it').click(function() {
+    $('#login-card').fadeOut(100);
+    $('#register-card').fadeIn(300);
   });
+
+  //Bring in the Buffer Card
+  $('.buff-it').click(function() {
+    $('#register-card').fadeOut(100);
+    $('#buffer-card').fadeIn(300);
+  });
+
+  //Shuffle Gallery
   $(function () {
     var parent = $("#shuffle");
     var divs = parent.children();

@@ -344,6 +344,22 @@ input[type="submit"]:hover {
   transition: all 0.3s ease 0s;
 }
 
+#login-card,
+#register-card,
+#buffer-card {
+  display: none;
+}
+
+#login-card input,
+#register-card input {
+  margin-top: 20px;
+}
+
+#login-card button,
+#register-card button {
+  margin-top: 20px;
+}
+
 .navbar {
   border: none;
   background-color: #4d4d4d;
