@@ -23,6 +23,8 @@
         <div class="overlay" style="background-image: url('assets/img/avatar-icon-700x200.png');">
           <h2><?php echo $row['pname']; ?></h1>
           <p>$<?php echo $row['pamount']; ?></p>
+          <img class="like like-outline" src="assets/img/Like Simple - OUTLINE.png" alt="">
+          <img class="like like-block" src="assets/img/Like Simple.png" alt="">
         </div>
       </a>
     </div>
@@ -35,7 +37,8 @@
       <a href="profile.php" id="profile-open">
         <div class="overlay" style="background-image: url('assets/img/avatar.jpg');">
           <h2>Profile</h2>
-          <?php include 'assets/img/heart.php' ?>
+          <img class="like like-outline" src="assets/img/Like Simple - OUTLINE.png" alt="">
+          <img class="like like-block" src="assets/img/Like Simple.png" alt="">
         </div>
       </a>
     </div>

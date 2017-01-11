@@ -3,10 +3,15 @@
   background-color: $du-n-70
   box-shadow: 0 4px 2px -2px $du-p-black
 
-.navbar-brand img
+.nav-it
+  display: inline-block
+  float: none
+  padding-left: 30px
+
+.nav-it img
   height: 25px
 
-.navbar-brand p
+.nav-it p
   margin-left: 25px
 
 .dropdown img,
@@ -18,7 +23,8 @@
   display: inline
 
   img
-    height: 33px
+    width: 150px
+    height: auto
     float: left
 
   p
@@ -27,7 +33,7 @@
 
   .btn
     height: 50px
-    width: 150px
+    width: 175px
     border-radius: 0
 
 .btn-primary
@@ -36,11 +42,14 @@
 .dropdown-menu
   margin-top: 16px
   margin-left: 22px
-  min-width: 152px
-  max-width: 152px
+  min-width: 176px
+  max-width: 176px
   border-radius: 0
   border-bottom-left-radius: 5px
   border-bottom-right-radius: 5px
+
+  li
+    text-align: center
 
 
 #df-nav-name
@@ -48,16 +57,17 @@
   color: #eee
   background-color: darken($du-p-red, 10%)
 
-.navbar-brand .short-logo
+.nav-it .short-logo
   display: none
 
 
 
-@media (max-width: 500px)
-  .navbar-brand .long-logo
+@media (max-width: 580px)
+  .nav-it .long-logo
     display: none
 
-  .navbar-brand .short-logo
+  .nav-it .short-logo
     display: inline
+
   #df-nav-name
-    margin-left: 40px
+    margin-left: 0

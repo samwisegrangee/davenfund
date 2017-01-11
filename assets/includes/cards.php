@@ -2,11 +2,14 @@
 
 <div class="video-overlay card" id="video-card">
   <div class="video-overlay-content">
-    <h1 class="title">The Davenfund</h1>
-    <img src="assets/img/5554 Davenfund Logo - Transparent Background.png" alt="Davenfund Logo">
+    <h1 class="title"><img src="assets/img/5554 Davenfund Logo - Transparent Background.png" alt="Davenfund Logo"></h1>
 
-    <button class="btn btn-lg log-it">Get Started</button>
+    <button class="btn btn-lg log-it logo-in">Get Started</button>
   </div>
+</div>
+
+<div id="corner-logo">
+  <img src="assets/img/5554 Davenfund Logo - Transparent Background.png" alt="">
 </div>
 
 <!--Login-->
@@ -62,7 +65,7 @@
 <div class="center-container field-box card" id="buffer-card">
 <div class="center-title">
 
-  <h1>Would you like to go make a profile</h1>
+  <h1>Would you like <br> to make a profile...</h1>
 
 </div>
 

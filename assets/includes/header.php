@@ -13,14 +13,11 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="#" class="navbar-brand">
-            <img src="assets/img/red-horiz-logo.png" class="long-logo">
-            <img src="assets/img/red-u-logo.png" class="short-logo">
-          </a>
+
 
           <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="df-nav-name">
-              <img src="assets/img/5554 Davenfund Logo - Circle.png" alt=""><p>Davenfund</p>
+              <img src="assets/img/DavenFund Text Menu.png" alt="">
             </button>
             <ul class="dropdown-menu">
               <li><a href="index.php">Home</a></li>
@@ -28,9 +25,12 @@
               <li><a href="everybody.php">Gallery</a></li>
             </ul>
           </div>
-
-
-
+          <div class="nav-it">
+            <a href="#">
+              <img src="assets/img/DU Logo Center Navbar.png" class="long-logo">
+              <img src="assets/img/White DU.png" class="short-logo">
+            </a>
+          </div>
 
           <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
             <span class="icon-bar"></span>
@@ -41,7 +41,7 @@
 
         <div class="collapse navbar-collapse navHeaderCollapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="login.php">Sign Out</a></li>
+            <li><a href="index.php">Sign Out</a></li>
             <li><a href="create.php">Create</a></li>
             <li><a href="edit.php">Edit</a></li>
             <li><a href="about.php">About</a></li>

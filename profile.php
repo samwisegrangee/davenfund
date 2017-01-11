@@ -52,8 +52,9 @@
            <h4><?php echo $pd ?></h4>
            <h4>$<?php echo $pa ?></h4>
            <h4><?php echo $pr ?></h4>
-           <button class="btn"><//?php include 'assets/img/heart.php'; ?></button>
-         </ul>
+           <img class="like like-outline" src="assets/img/Like Simple - OUTLINE.png" alt="">
+           <img class="like like-block" src="assets/img/Like Simple.png" alt="">
+          </ul>
        </div>
      </div>
     </div>
@@ -70,9 +71,14 @@
      <br>
 
    </div>
-
+   <a href="everybody.php">
+     <div class="gall-back">
+       <img src="assets/img/5554 Davenfund Logo - Transparent Background.png" alt="">
+       <p>Return to Gallery</p>
+     </div>
+   </a>
   </div>
-  <a href="edit.php">Click to edit profile</a>
+
 
 </div>
 

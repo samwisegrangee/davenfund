@@ -26,6 +26,11 @@ $(document).ready(function() {
 
 
   //Bring in the Login Card
+  $('.logo-in').click(function() {
+    $('#corner-logo').fadeIn(300);
+  });
+
+
   $('.log-it').click(function() {
     $('#video-card').fadeOut(100);
     $('#register-card').fadeOut(100);
