@@ -280,6 +280,7 @@ button:hover {
 }
 
 .half-holder {
+  min-height: 200px;
   width: 100%;
   background-color: #4d4d4d;
 }
@@ -698,7 +699,7 @@ video {
   opacity: 0.5;
 }
 
-.box .overlay h2 {
+.box .overlay h2, .box .overlay p {
   margin-top: 0;
   color: #eee;
   text-shadow: 2px 2px #222;
