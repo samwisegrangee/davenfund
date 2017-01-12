@@ -1,35 +1,9 @@
 <?php
   include('assets/includes/db.php');
   include('assets/includes/header.php');
+  include('assets/includes/rowvars.php');
 ?>
 
-<?php
-  //For posting by ID in .profile div
-  $id = $_GET['id'];
-
-  try {
-  $sql = "SELECT * FROM proposals WHERE id='$id'";
-  $results = $pdoConnect->query($sql);
-
-  } catch (PDOException $e) {
-    echo $e->getMessage();
-  }
-
-  while ($row = $results->fetch(PDO::FETCH_ASSOC)) {
-    $id = $row['id'];
-    $pn = $row['pname'];
-    $pd = $row['pdept'];
-    $pa = $row['pamount'];
-    $pr = $row['prequest'];
-    $pdes = $row['pdescription'];
-    $pm = $row['pmeasure'];
-    $pdoc = $row['pdocument'];
-    $pf = $row['pfeedback'];
-    $pc = $row['pcomments'];
-
-  }
-
-?>
 
 <div class="center-container">
   <div class="proposal-container">
@@ -52,6 +26,7 @@
            <h4><?php echo $pd ?></h4>
            <h4>$<?php echo $pa ?></h4>
            <h4><?php echo $pr ?></h4>
+
            <img class="like like-outline" src="assets/img/Like Simple - OUTLINE.png" alt="">
            <img class="like like-block" src="assets/img/Like Simple.png" alt="">
           </ul>
@@ -69,6 +44,7 @@
      <h4>How will you measure the improvements the funds provide?</h4>
      <p><?php echo $pm ?></p>
      <br>
+     <a href="edit.php?id=<?php echo $id ?>">Click Here to Edit</a>
 
    </div>
    <a href="everybody.php">

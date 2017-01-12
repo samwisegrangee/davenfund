@@ -43,7 +43,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.php">Sign Out</a></li>
             <li><a href="create.php">Create</a></li>
-            <li><a href="edit.php">Edit</a></li>
+            <!--<li><a href="edit.php">Edit</a></li>-->
             <li><a href="about.php">About</a></li>
           </ul>
         </div>

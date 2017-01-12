@@ -4,17 +4,7 @@ if(isset($_POST['insert']))
 {
   include('assets/includes/db.php');
 
-  // get values form input text and number
-  $pname = $_POST['pname'];
-  $pdept = $_POST['pdept'];
-  $pamount = $_POST['pamount'];
-  $prequest = $_POST['prequest'];
-  $pdescription = $_POST['pdescription'];
-  $pmeasure = $_POST['pmeasure'];
-  $pdocument = $_POST['pdocument'];
-  $pfeedback = $_POST['pfeedback'];
-  $pcomments = $_POST['pcomments'];
-
+  include('assets/includes/postvars.php');
 
   // Query to insert data
   $pdoQuery = "INSERT INTO `proposals`(`pname`, `pdept`, `pamount`, `prequest`, `pdescription`, `pmeasure`, `pdocument`, `pfeedback`, `pcomments`) VALUES (:pname, :pdept, :pamount, :prequest, :pdescription, :pmeasure, :pdocument, :pfeedback, :pcomments)";
@@ -33,7 +23,7 @@ if(isset($_POST['insert']))
 
 }
 
-include('assets/includes/header.php')
+include('assets/includes/header.php');
 
 ?>
 
