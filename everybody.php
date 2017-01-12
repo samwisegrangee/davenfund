@@ -1,5 +1,8 @@
 <?php
   include('assets/includes/db.php');
+
+  include('assets/includes/rowvars.php');
+
   include('assets/includes/header.php');
 ?>
 

@@ -647,16 +647,17 @@ video {
 
 .gall-head .gall-title {
   text-align: center;
-  height: 100px;
+  height: 99px;
   width: 33%;
   background-color: #ee3124;
   color: white;
   margin: 0 auto;
-  margin-top: -120px;
+  margin-top: -126px;
 }
 
 .gall-head .gall-title h1 {
-  padding-top: 30px;
+  padding-top: 25px;
+  font-size: 40px;
 }
 
 .like {
@@ -668,6 +669,14 @@ video {
 
 .like-block {
   display: none;
+}
+
+.overlay-logo {
+  position: absolute;
+  height: 100px;
+  right: 10px;
+  bottom: 10px;
+  z-index: 1;
 }
 
 .box {
@@ -693,10 +702,6 @@ video {
   margin-top: 0;
   color: #eee;
   text-shadow: 2px 2px #222;
-}
-
-.box .overlay .like {
-  margin-top: 60px;
 }
 
 .box .overlay:hover {
@@ -741,7 +746,7 @@ video {
 
 .profile-img {
   max-height: 200px;
-  max-width: 300px;
+  max-width: 275px;
   display: block;
   margin: 0 auto;
   border-radius: 5px;

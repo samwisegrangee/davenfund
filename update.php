@@ -24,6 +24,7 @@ $pdoUpdate->bindParam(':pmeasure', $pmeasure, PDO::PARAM_STR);
 $pdoUpdate->bindParam(':pdocument', $pdocument, PDO::PARAM_STR);
 $pdoUpdate->bindParam(':pfeedback', $pfeedback, PDO::PARAM_STR);
 $pdoUpdate->bindParam(':pcomments', $pcomments, PDO::PARAM_STR);
+//$pdoUpdate->bindParam(':pimage', $pimage, PDO::PARAM_STR);
 $pdoUpdate->execute();
 
 //

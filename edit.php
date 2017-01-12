@@ -55,6 +55,9 @@ include 'assets/includes/rowvars.php';
         <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="pcomments"><?php echo $pc; ?></textarea>
       </div>
 
+      <input type="file" name="image" id="fileToUpload"><br><br>
+
+
       <input type="submit" name="update" value="Update">
 
     </form>

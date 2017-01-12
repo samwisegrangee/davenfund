@@ -16,7 +16,7 @@
     <div class="half-holder">
       <div class="left-half">
        <div class="box-text twin l-twin">
-          <img class="profile-img" src="assets/img/avatar.jpg" alt="Profile Image">
+          <img class="profile-img" src="<?php echo $pim ?>" alt="Profile Image">
        </div>
      </div>
 

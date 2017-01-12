@@ -9,3 +9,7 @@
   $pdocument = $_POST['pdocument'];
   $pfeedback = $_POST['pfeedback'];
   $pcomments = $_POST['pcomments'];
+
+  $folder = "uploaded_images/";
+
+  $upload_image = $folder . basename($_FILES["image"]["name"]);

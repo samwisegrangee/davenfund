@@ -6,21 +6,23 @@ if(isset($_POST['insert']))
 
   include('assets/includes/postvars.php');
 
-  // Query to insert data
-  $pdoQuery = "INSERT INTO `proposals`(`pname`, `pdept`, `pamount`, `prequest`, `pdescription`, `pmeasure`, `pdocument`, `pfeedback`, `pcomments`) VALUES (:pname, :pdept, :pamount, :prequest, :pdescription, :pmeasure, :pdocument, :pfeedback, :pcomments)";
+  if (move_uploaded_file($_FILES["image"]["tmp_name"], $upload_image)) {
 
-  $pdoResult = $pdoConnect->prepare($pdoQuery);
+    // Query to insert data
+    $pdoQuery = "INSERT INTO `proposals`(`pname`, `pdept`, `pamount`, `prequest`, `pdescription`, `pmeasure`, `pdocument`, `pfeedback`, `pcomments`, image) VALUES (:pname, :pdept, :pamount, :prequest, :pdescription, :pmeasure, :pdocument, :pfeedback, :pcomments, '$upload_image')";
 
-  $pdoExec = $pdoResult->execute(array(":pname"=>$pname, ":pdept"=>$pdept, ":pamount"=>$pamount, ":prequest"=>$prequest, ":pdescription"=>$pdescription, ":pmeasure"=>$pmeasure, ":pdocument"=>$pdocument, ":pfeedback"=>$pfeedback, ":pcomments"=>$pcomments));
+    $pdoResult = $pdoConnect->prepare($pdoQuery);
 
-  // check if mysql insert query successful
-  if($pdoExec){
-    header('Location: everybody.php');
-    //echo 'Data Inserted';
-  }else{
-    echo 'Data Not Inserted';
+    $pdoExec = $pdoResult->execute(array(":pname"=>$pname, ":pdept"=>$pdept, ":pamount"=>$pamount, ":prequest"=>$prequest, ":pdescription"=>$pdescription, ":pmeasure"=>$pmeasure, ":pdocument"=>$pdocument, ":pfeedback"=>$pfeedback, ":pcomments"=>$pcomments));
+
+    // check if mysql insert query successful
+    if($pdoExec){
+      header('Location: everybody.php');
+      //echo 'Data Inserted';
+    }else{
+      echo 'Data Not Inserted';
+    }
   }
-
 }
 
 include('assets/includes/header.php');
@@ -33,7 +35,7 @@ include('assets/includes/header.php');
   </div>
   <div class="center-form">
 
-    <form action="" method="post">
+    <form action="" method="post" enctype="multipart/form-data">
 
         <input type="text" name="pname" required placeholder="Proposal Name"><br><br>
 
@@ -65,6 +67,9 @@ include('assets/includes/header.php');
           <p class="form-text">Additional comments:</p>
           <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="pcomments"></textarea>
         </div>
+        
+        <input type="file" name="image" id="fileToUpload"><br><br>
+
 
         <input type="submit" name="insert" value="Submit">
 
