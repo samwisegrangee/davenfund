@@ -15,7 +15,7 @@ include 'assets/includes/rowvars.php';
   </div>
   <div class="center-form">
 
-    <form action='update.php?id=<?php echo $id ?>' method="post">
+    <form action='update.php?id=<?php echo $id ?>' method="post" enctype="multipart/form-data">
 
       <input type="text" name="pname" required value="<?php echo $pn; ?>" placeholder="Proposal Name"><br><br>
 

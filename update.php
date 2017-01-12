@@ -7,10 +7,22 @@ include('assets/includes/postvars.php');
 
 $id = $_GET['id'];
 
-//echo "We will update $id $pname $pdept $pamount $pcomments";
+$imgFile = $_FILES['image']['name'];
+$tmp_dir = $_FILES['image']['tmp_name'];
+$imgSize = $_FILES['image']['size'];
+
+$upload_image = $folder . basename($imgFile);
+
+if($imgFile) {
+  unlink($folder.$edit_row['image']);
+  move_uploaded_file($tmp_dir,$upload_image);
+} else {
+  include('assets/includes/rowvars.php');
+  $upload_image = $pim;
+}
 
 // mysql query to insert data
-$pdoUpdate = $pdoConnect->prepare("UPDATE proposals SET id=:id, pname=:pname, pdept=:pdept, pamount=:pamount, prequest=:prequest, pdescription=:pdescription, pmeasure=:pmeasure, pdocument=:pdocument, pfeedback=:pfeedback, pcomments=:pcomments WHERE id=:id");
+$pdoUpdate = $pdoConnect->prepare("UPDATE proposals SET id=:id, pname=:pname, pdept=:pdept, pamount=:pamount, prequest=:prequest, pdescription=:pdescription, pmeasure=:pmeasure, pdocument=:pdocument, pfeedback=:pfeedback, pcomments=:pcomments, image=:image WHERE id=:id");
 
 $pdoUpdate->bindParam(':id', $id, PDO::PARAM_INT);
 $pdoUpdate->bindParam(':pname', $pname, PDO::PARAM_STR);
@@ -24,7 +36,7 @@ $pdoUpdate->bindParam(':pmeasure', $pmeasure, PDO::PARAM_STR);
 $pdoUpdate->bindParam(':pdocument', $pdocument, PDO::PARAM_STR);
 $pdoUpdate->bindParam(':pfeedback', $pfeedback, PDO::PARAM_STR);
 $pdoUpdate->bindParam(':pcomments', $pcomments, PDO::PARAM_STR);
-//$pdoUpdate->bindParam(':pimage', $pimage, PDO::PARAM_STR);
+$pdoUpdate->bindParam(':image', $upload_image, PDO::PARAM_STR);
 $pdoUpdate->execute();
 
 //
