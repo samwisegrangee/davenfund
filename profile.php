@@ -23,12 +23,16 @@
      <div class="right-half">
        <div class="box-text twin r-twin">
          <ul>
+
            <h4><?php echo $pd ?></h4>
            <h4>$<?php echo $pa ?></h4>
            <h4><?php echo $pr ?></h4>
 
-           <img class="like like-outline" src="assets/img/Like Simple - OUTLINE.png" alt="">
-           <img class="like like-block" src="assets/img/Like Simple.png" alt="">
+           <div class="like-box like-it">
+             <img class="like like-outline" src="assets/img/Like Simple - OUTLINE.png" alt="">
+             <img class="like like-block" src="assets/img/Like Simple.png" alt="">
+           </div>
+
           </ul>
        </div>
      </div>

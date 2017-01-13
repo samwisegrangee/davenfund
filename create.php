@@ -52,22 +52,23 @@ include('assets/includes/header.php');
         </div>
         <br>
         <div class="question-container">
+          <!--textarea should be cols="40" when Helvetica Neue Lt-->
           <p class="form-text">How will these funds help improve your role, your department, and/or DU in general?</p>
-          <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;Description" name="pdescription"></textarea>
+          <textarea rows="4" cols="35" placeholder="&nbsp;&nbsp;Description" name="pdescription"></textarea>
 
           <p class="form-text">How will you measure the improvements the funds provide?</p>
-          <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="pmeasure"></textarea>
+          <textarea rows="4" cols="35" placeholder="&nbsp;&nbsp;..." name="pmeasure"></textarea>
 
           <p class="form-text">Provide documentation on cost to justify requested amount.</p>
-          <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="pdocument"></textarea>
+          <textarea rows="4" cols="35" placeholder="&nbsp;&nbsp;..." name="pdocument"></textarea>
 
           <p class="form-text">Do you have any feedback on this process or program? Would you like to see this program continued?</p>
-          <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="pfeedback"></textarea>
+          <textarea rows="4" cols="35" placeholder="&nbsp;&nbsp;..." name="pfeedback"></textarea>
 
           <p class="form-text">Additional comments:</p>
-          <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="pcomments"></textarea>
+          <textarea rows="4" cols="35" placeholder="&nbsp;&nbsp;..." name="pcomments"></textarea>
         </div>
-        
+
         <input type="file" name="image" id="fileToUpload"><br><br>
 
 

@@ -9,20 +9,11 @@
       <div class="yellow-box"></div>
       <div class="green-box"></div>
     </div>
-    <div class="half-holder">
-      <div class="left-half">
-       <div class="box-text twin l-twin">
-          <img class="profile-img" src="assets/img/avatar.jpg" alt="Profile Image">
-       </div>
-     </div>
+    <div class="about-cover" class="half-holder" style="background-image: url('assets/img/Davenport_University_Lettinga_Campus_2.jpg');">
+      <div class="about-cover-text-container">
+        <h1>Bernice's Story</h1>
 
-     <div class="right-half">
-       <div class="box-text twin r-twin">
-
-           <h2>Bernice's Story</h2>
-
-       </div>
-     </div>
+      </div>
     </div>
 
 
@@ -37,12 +28,15 @@
      <p>The part of this story I am most proud of is that people listened to my idea. Then, when it was time to make it happen others joined in to help me make it a reality. I really am very appreciative of all of the support I was given. My story came true and I encourage any employee if they have an idea to improve the way they work to make it happen.</p>
      <p>Sincerely,</p>
      <p>Bernice Ewing</p>
+     <br><br><br>
 
    </div>
 
   </div>
 
 </div>
-
+<div class="corner-logo">
+  <img src="assets/img/5554 Davenfund Logo - Transparent Background.png" alt="">
+</div>
 
 <?php include 'assets/includes/footer.php'; ?>

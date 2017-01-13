@@ -30,7 +30,6 @@ $(document).ready(function() {
     $('#corner-logo').fadeIn(300);
   });
 
-
   $('.log-it').click(function() {
     $('#video-card').fadeOut(100);
     $('#register-card').fadeOut(100);
@@ -48,6 +47,12 @@ $(document).ready(function() {
     $('#register-card').fadeOut(100);
     $('#buffer-card').fadeIn(300);
   });
+
+  //Bring in the Register Card
+  //$('.like-it').click(function() {
+  //  $('.like-outline').fadeOut(100);
+  //  $('.like-block').fadeIn(300);
+  //});
 
   //Shuffle Gallery
   $(function () {

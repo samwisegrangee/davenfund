@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Steelfish Bold';
+  src: url("Davenport-Steelfish-Bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Light Std Light';
+  src: url("HelveticaNeueLTStd-Lt.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -180,40 +194,6 @@ td, th {
   padding: 0;
 }
 
-html {
-  height: 100%;
-}
-
-body {
-  background-color: #1a1a1a;
-  position: relative;
-  min-height: 100%;
-  margin: 0;
-  padding-bottom: 6rem;
-  font-size: 14px;
-  line-height: 1.6;
-  font-family: 'Oswald', sans-serif;
-  color: #666;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-}
-
-.container-fluid {
-  display: block;
-  height: 100%;
-}
-
-footer {
-  background-color: #191919;
-  position: absolute;
-  display: block;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  text-align: center;
-}
-
 a {
   text-decoration: none;
 }
@@ -319,6 +299,52 @@ button:hover {
   }
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #1a1a1a;
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  padding-bottom: 6rem;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 'Steelfish Bold', 'Oswald', sans-serif;
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container-fluid {
+  display: block;
+  height: 100%;
+}
+
+p, a {
+  font-family: sans-serif;
+}
+
+footer {
+  background-color: #191919;
+  position: absolute;
+  display: block;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: right;
+}
+
+footer p {
+  margin-right: 20px;
+}
+
+footer p a {
+  font-size: 20px;
+}
+
 input[type="text"], input[type="password"], input[type="number"] {
   outline: none;
   padding: 10px;
@@ -326,6 +352,7 @@ input[type="text"], input[type="password"], input[type="number"] {
   width: 300px;
   border-radius: 3px;
   border: 1px solid #eee;
+  font-size: 20px;
 }
 
 input[type="submit"] {
@@ -338,11 +365,22 @@ input[type="submit"] {
   border-radius: 3px;
   cursor: pointer;
   background-color: #ee3124;
+  font-size: 20px;
 }
 
 input[type="submit"]:hover {
   background-color: #a0160c;
   transition: all 0.3s ease 0s;
+}
+
+textarea {
+  font-size: 15px;
+  font-family: sans-serif;
+  /*font-family: 'Helvetica Neue Light Std Light'*/
+}
+
+.radio-container {
+  font-size: 20px;
 }
 
 #login-card,
@@ -366,14 +404,14 @@ input[type="submit"]:hover {
   display: none;
 }
 
-#corner-logo {
+.corner-logo {
   position: fixed;
   width: 200px;
   right: 0;
   bottom: 15vh;
 }
 
-#corner-logo img {
+.corner-logo img {
   height: 250px;
   float: right;
   margin-top: 30px;
@@ -387,7 +425,7 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 768px) {
-  #corner-logo img {
+  .corner-logo img, #corner-logo img {
     height: 150px;
   }
 }
@@ -400,8 +438,11 @@ input[type="submit"]:hover {
   #corner-logo {
     top: 80px;
   }
-  #corner-logo img {
+  .corner-logo img, #corner-logo img {
     height: 100px;
+  }
+  .corner-logo {
+    bottom: 20px;
   }
   #buffer-card .center-title {
     margin-left: 0;
@@ -569,11 +610,37 @@ video {
   margin-top: 25px;
 }
 
+.about-cover {
+  height: 200px;
+  width: 100%;
+  background-position: center;
+}
+
+.about-cover-text-container {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.about-cover-text-container h1 {
+  display: block;
+  position: absolute;
+  margin-top: 75px;
+  margin-left: 35px;
+  font-size: 50px;
+  color: #ccc;
+  text-shadow: 2px 2px #222;
+}
+
 .edit {
   max-width: 300px;
 }
 
 .form-text {
+  /*font-family: 'Steelfish Bold'*/
+  font-family: 'Oswald', sans-serif;
+  line-height: 20px;
+  font-size: 20px;
   color: #eee;
 }
 
@@ -589,6 +656,7 @@ video {
 
 .question-container textarea {
   border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 .file-container {
@@ -648,17 +716,20 @@ video {
 
 .gall-head .gall-title {
   text-align: center;
-  height: 99px;
+  height: 98px;
   width: 33%;
   background-color: #ee3124;
   color: white;
   margin: 0 auto;
-  margin-top: -126px;
+  margin-top: -99px;
 }
 
 .gall-head .gall-title h1 {
+  display: block;
+  position: relative;
+  margin: 0 auto;
   padding-top: 25px;
-  font-size: 40px;
+  /*font-size: 50px*/
 }
 
 .like {
@@ -700,6 +771,7 @@ video {
 }
 
 .box .overlay h2, .box .overlay p {
+  font-family: 'Oswald';
   margin-top: 0;
   color: #eee;
   text-shadow: 2px 2px #222;
@@ -712,6 +784,12 @@ video {
 @media (max-width: 800px) {
   .box .overlay {
     opacity: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .gall-head .gall-title {
+    width: 66%;
   }
 }
 
@@ -783,6 +861,11 @@ video {
 
 .gall-back img {
   height: 150px;
+}
+
+.gall-back p {
+  font-family: sans-serif;
+  font-size: 20px;
 }
 
 .gall-back:hover {

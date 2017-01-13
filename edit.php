@@ -10,8 +10,8 @@ include 'assets/includes/rowvars.php';
 
 <div class="center-container field-box">
   <div class="center-title">
-    <h1>Records for <?php echo $pn; ?></h1>
-    <h3>Update Information</h3>
+    <h1><?php echo $pn; ?></h1>
+    <h3>Edit Proposal</h3>
   </div>
   <div class="center-form">
 
@@ -30,29 +30,33 @@ include 'assets/includes/rowvars.php';
       <p class="form-text">Fund Request Category and Item</p>
       <div class="radio-container">
 
-        <input type="radio" name="prequest" value="Professional Development" checked>&nbsp;&nbsp;&nbsp;&nbsp;Professional Development<br>
-        <input type="radio" name="prequest" value="Equipment">&nbsp;&nbsp;&nbsp;&nbsp;Equipment<br>
-        <input type="radio" name="prequest" value="Other">&nbsp;&nbsp;&nbsp;&nbsp;Other<br>
+        <input type="radio" name="prequest" value="Professional Development" checked>
+        &nbsp;&nbsp;&nbsp;&nbsp;Professional Development<br>
+        <input type="radio" name="prequest" value="Equipment">
+        &nbsp;&nbsp;&nbsp;&nbsp;Equipment<br>
+        <input type="radio" name="prequest" value="Other">
+        &nbsp;&nbsp;&nbsp;&nbsp;Other<br>
       </div>
 
 
 
       <br>
       <div class="question-container">
+        <!--textarea should be cols="40" when Helvetica Neue Lt-->
         <p class="form-text">How will these funds help improve your role, your department, and/or DU in general?</p>
-        <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="pdescription"><?php echo $pdes; ?></textarea>
+        <textarea rows="4" cols="35" placeholder="&nbsp;&nbsp;..." name="pdescription"><?php echo $pdes; ?></textarea>
 
         <p class="form-text">How will you measure the improvements the funds provide?</p>
-        <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="pmeasure"><?php echo $pm; ?></textarea>
+        <textarea rows="4" cols="35" placeholder="&nbsp;&nbsp;..." name="pmeasure"><?php echo $pm; ?></textarea>
 
         <p class="form-text">Provide documentation on cost to justify requested amount.</p>
-        <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="pdocument"><?php echo $pdoc; ?></textarea>
+        <textarea rows="4" cols="35" placeholder="&nbsp;&nbsp;..." name="pdocument"><?php echo $pdoc; ?></textarea>
 
         <p class="form-text">Do you have any feedback on this process or program? Would you like to see this program continued?</p>
-        <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="pfeedback"><?php echo $pf; ?></textarea>
+        <textarea rows="4" cols="35" placeholder="&nbsp;&nbsp;..." name="pfeedback"><?php echo $pf; ?></textarea>
 
         <p class="form-text">Additional comments:</p>
-        <textarea rows="4" cols="47" placeholder="&nbsp;&nbsp;..." name="pcomments"><?php echo $pc; ?></textarea>
+        <textarea rows="4" cols="35" placeholder="&nbsp;&nbsp;..." name="pcomments"><?php echo $pc; ?></textarea>
       </div>
 
       <input type="file" name="image" id="fileToUpload"><br><br>

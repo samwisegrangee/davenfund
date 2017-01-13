@@ -26,16 +26,20 @@
 
   .gall-title
     text-align: center
-    height: 99px
+    height: 98px
     width: 33%
     background-color: $du-p-red
     color: white
     margin: 0 auto
-    margin-top: -126px
+    margin-top: -99px
+
 
     h1
+      display: block
+      position: relative
+      margin: 0 auto
       padding-top: 25px
-      font-size: 40px
+      /*font-size: 50px*/
 
 .like
   margin-top: 30px
@@ -73,16 +77,19 @@
     opacity: 0.5
 
     h2, p
+      font-family: 'Oswald'
       margin-top: 0
       color: #eee
       text-shadow: 2px 2px #222
 
-    //.like
-      //margin-top: 60px
-
   .overlay:hover
     opacity: 1
+
 
 @media (max-width: 800px)
   .box .overlay
     opacity: 1
+
+@media (max-width: 500px)
+  .gall-head .gall-title
+    width: 66%

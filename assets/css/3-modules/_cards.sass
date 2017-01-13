@@ -15,7 +15,7 @@
   br
     display: none
 
-#corner-logo
+.corner-logo
   position: fixed
   width: 200px
   right: 0
@@ -32,7 +32,7 @@
     bottom: 0
 
 @media (max-width: 768px)
-  #corner-logo img
+  .corner-logo img, #corner-logo img
     height: 150px
 
 @media (max-width: 500px)
@@ -42,8 +42,13 @@
 
   #corner-logo
     top: 80px
-    img
-      height: 100px
+
+  .corner-logo img, #corner-logo img,
+    height: 100px
+
+  .corner-logo
+    bottom: 20px
+    
   #buffer-card
     .center-title
       margin-left: 0
@@ -51,4 +56,4 @@
       br
         display: block
       h1
-        font-size: 25px 
+        font-size: 25px
