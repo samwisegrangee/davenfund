@@ -3,7 +3,7 @@
 
 <div class="center-container">
   <div class="proposal-container">
-    <h2>How the Davenfund Began</h2>
+    <h2>How DavenFund Began</h2>
     <div class="proposal-title">
       <div class="blue-box"></div>
       <div class="yellow-box"></div>

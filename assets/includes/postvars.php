@@ -11,5 +11,7 @@
   $pcomments = $_POST['pcomments'];
 
   $folder = "uploaded_images/";
+  $doc_folder ="uploaded_docs/";
 
   $upload_image = $folder . basename($_FILES["image"]["name"]);
+  $upload_file = $doc_folder . basename($_FILES["document"]["name"]);
