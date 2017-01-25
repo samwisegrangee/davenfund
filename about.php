@@ -11,7 +11,7 @@
     </div>
     <div class="about-cover" class="half-holder" style="background-image: url('assets/img/Davenport_University_Lettinga_Campus_2.jpg');">
       <div class="about-cover-text-container">
-        <h1>Bernice's Story</h1>
+        <h1>The DavenFund Story</h1>
 
       </div>
     </div>

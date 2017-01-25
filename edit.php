@@ -23,10 +23,6 @@ include 'assets/includes/rowvars.php';
 
       <input type="number" name="pamount" required value="<?php echo $pa; ?>" placeholder="Amount ($100 — $2,000)" min="0" max="2000"><br><br>
 
-
-
-      <!--Use jQuery or something to Check the one in DB-->
-
       <p class="form-text">Fund Request Category and Item</p>
       <div class="radio-container">
 
@@ -97,8 +93,11 @@ include 'assets/includes/rowvars.php';
         <textarea rows="4" cols="35" placeholder="&nbsp;&nbsp;..." name="pcomments"><?php echo $pc; ?></textarea>
       </div>
 
+      <p class="form-text">Image:</p>
       <input type="file" name="image"><br><br>
 
+      <p class="form-text">Documentation:</p>
+      <input type="file" name="document"><br><br>
 
       <input type="submit" name="update" value="Update">
 

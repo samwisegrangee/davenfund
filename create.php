@@ -50,7 +50,6 @@ include('assets/includes/header.php');
 
         <p class="form-text">Fund Request Category and Item</p>
         <div class="radio-container">
-                  <!--Need Item fields-->
           <input type="radio" name="prequest" value="Professional Development" checked>&nbsp;&nbsp;&nbsp;&nbsp;Professional Development<br>
           <input type="radio" name="prequest" value="Equipment">&nbsp;&nbsp;&nbsp;&nbsp;Equipment<br>
           <input type="radio" name="prequest" value="Software">

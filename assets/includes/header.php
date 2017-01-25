@@ -26,10 +26,8 @@
             </ul>
           </div>
           <div class="nav-it">
-            <a href="#">
               <img src="assets/img/DU Logo Center Navbar.png" class="long-logo">
               <img src="assets/img/White DU.png" class="short-logo">
-            </a>
           </div>
 
           <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">

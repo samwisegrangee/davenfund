@@ -22,5 +22,6 @@ while ($row = $results->fetch(PDO::FETCH_ASSOC)) {
   $pf = $row['pfeedback'];
   $pc = $row['pcomments'];
   $pim = $row['image']; //IMAGE ADDED
+  $pdoc = $row['document'];
 
 }

@@ -1,13 +1,6 @@
 @font-face {
   font-family: 'Steelfish Bold';
-  src: url("Davenport-Steelfish-Bold.otf") format("opentype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Helvetica Neue Light Std Light';
-  src: url("HelveticaNeueLTStd-Lt.otf") format("opentype");
+  src: url("steelfish_bd-webfont.eot"), url("steelfish_bd-webfont.woff") format("woff"), url("steelfish_bd-webfont.ttf") format("truetype"), url("steelfish_bd-webfont.svg#Steelfish Bold") format("svg");
   font-style: normal;
   font-weight: normal;
 }
@@ -345,6 +338,30 @@ footer p a {
   font-size: 20px;
 }
 
+h1, h2, h3, h4, a {
+  font-family: 'Steelfish Bold', 'Oswald', sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+a, li a {
+  font-size: 24px;
+}
+
 input[type="text"], input[type="password"], input[type="number"] {
   outline: none;
   padding: 10px;
@@ -371,6 +388,10 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #a0160c;
   transition: all 0.3s ease 0s;
+}
+
+input[type="file"] {
+  font-size: 20px;
 }
 
 textarea {
@@ -518,6 +539,10 @@ textarea {
 
 .dropdown-menu li {
   text-align: center;
+}
+
+.dropdown-menu li a {
+  font-family: 'Steelfish Bold', 'Oswald', sans-serif;
 }
 
 #df-nav-name {
@@ -670,8 +695,7 @@ video {
 }
 
 .form-text {
-  /*font-family: 'Steelfish Bold'*/
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Steelfish Bold', 'Oswald', sans-serif;
   line-height: 20px;
   font-size: 20px;
   color: #eee;
@@ -704,6 +728,11 @@ video {
   width: 300px;
 }
 
+.center-form em {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
 .img-upload {
   height: 50px;
   width: 60px;
@@ -716,10 +745,12 @@ video {
 .directive-box {
   text-align: left;
   padding: 10px;
+  margin-top: -25px;
 }
 
 .directive-box em {
-  font-size: 12px;
+  font-family: sans-serif;
+  font-size: 14px;
 }
 
 .gallery {
@@ -813,7 +844,7 @@ video {
 }
 
 .box .overlay h2, .box .overlay p {
-  font-family: 'Oswald';
+  font-family: 'Steelfish Bold', 'Oswald', sans-serif;
   margin-top: 0;
   color: #eee;
   text-shadow: 2px 2px #222;

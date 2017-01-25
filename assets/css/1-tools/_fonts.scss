@@ -1,13 +1,9 @@
 @font-face {
   font-family: 'Steelfish Bold';
-  src: url('Davenport-Steelfish-Bold.otf') format('opentype');
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Helvetica Neue Light Std Light';
-  src: url('HelveticaNeueLTStd-Lt.otf') format('opentype');
+  src: url('steelfish_bd-webfont.eot'),
+       url('steelfish_bd-webfont.woff') format('woff'),
+       url('steelfish_bd-webfont.ttf') format('truetype'),
+       url('steelfish_bd-webfont.svg#Steelfish Bold') format('svg');
   font-style: normal;
   font-weight: normal;
 }
