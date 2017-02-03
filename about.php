@@ -3,13 +3,13 @@
 
 <div class="center-container">
   <div class="proposal-container">
-    <h2>How DavenFund Began</h2>
+    <h2>The Story of DavenFund</h2>
     <div class="proposal-title">
       <div class="blue-box"></div>
       <div class="yellow-box"></div>
       <div class="green-box"></div>
     </div>
-    <div class="about-cover" class="half-holder" style="background-image: url('assets/img/Davenport_University_Lettinga_Campus_2.jpg');">
+    <div class="about-cover" class="half-holder" id="about-background"style="background-image: url('assets/img/DavenFund-Committee-Grayscale.jpg'); background-size: contain;">
       <div class="about-cover-text-container">
         <h1>The DavenFund Story</h1>
 
@@ -18,17 +18,23 @@
 
 
    <div class="prop-answer-container">
-     <p>Have your supervisor approve the request and if there is money in the budget your supervisor will let you know if it was approved.</p>
-     <p>A month ago a request was sent in and we are waiting to hear if the amount was approved?</p>
-     <p>Your request will take some time as we are checking the budget to see if it was applied to this year’s budget. Check with your supervisor to see if it has?</p>
-     <p>Your request was approved, but it will have to be applied to next years budget, check with your supervisor in six months.</p>
-     <p>This is how Davenfund was started I wanted to find a better way to apply for funds to do my work more efficiently. Having the money would have helped purchase the equipment or training I needed, but requesting the money seemed to be a job in itself.</p>
-     <p>I decided rather than complain, I would come up with a way that would not take a lot of time or process. My plan was to come up with an idea that Davenport employees could have access to money through a special employee fund already set in the yearly budget. The money from this fund would be awarded to any full time employee based on the importance of how it would be use to improve that employees job. A committee would be formed to randomly select any Davenport fulltime employee who applied for a Davenfund. This fund would be awarded to help purchase equipment or attend a training session. Simply stated an application would be granted to immediately impact some ones job.</p>
-     <p>Davenfund was created through channeling my frustrations and challenges in a positive constrictive way to be more useful, productive and efficient at my job. I am hoping the outcome would make all employees become more humble, helpful, and happier knowing Davenfund was created by an employee for Davenport employees to help the way they work around here.</p>
-     <p>The part of this story I am most proud of is that people listened to my idea. Then, when it was time to make it happen others joined in to help me make it a reality. I really am very appreciative of all of the support I was given. My story came true and I encourage any employee if they have an idea to improve the way they work to make it happen.</p>
-     <p>Sincerely,</p>
-     <p>Bernice Ewing</p>
-     <br><br><br>
+     <p>When we started DavenFund, the idea was to help Davenport employees successfully get funding for any conferences, software or equipment that sometimes get overlooked with many competing financial priorities. Overall, we wanted to help employees improve what they do here at Davenport.</p>
+
+     <p>To develop DavenFund, a committee of Davenport employees representing various campuses and departments was formed to help get this program off the ground and running by 2017.</p>
+
+     <p>The first mission was to come up with the name for the program, which we now call DavenFund. After that, the real work began with defining the project and the program work and forming subcommittees to handle tasks like the rules and eligibility, promotions, web design, a review committee process and defining any future obstacles or challenges we may encounter. To finalize the details for the program, we identified and recruited additional Davenport employees with specific expertise to help further define and create excellence within the program.</p>
+
+     <p>What we discovered through our own initiatives were the unknown difficulties that confronted this project with getting it off the ground – lack of funds, staff, you name it – barriers were there, along with the frustrations. However, through perseverance and some luck, we looked at these challenges as opportunities ... not only to get DavenFund up and running, but also to help enhance the culture at Davenport University.</p>
+
+     <p>The bottom line is that through DavenFund and the hard work and effort of current Davenport employees, we have not only created a program that will ultimately benefit our staff, faculty, students and community, we have also changed how we approach project work at Davenport. We did it by learning how to overcome challenges by being persistent and creative to implement improvements more effectively and efficiently.</p>
+
+     <p>Our committee thanks you for participating in DavenFund. So, please apply so you can help make a difference at Davenport. We look forward to your feedback.</p>
+
+     <br>
+
+     <p>Your DavenFund Committee</p>
+
+     <br><br>
 
    </div>
 
