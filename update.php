@@ -28,7 +28,7 @@ $docFile = $_FILES['document']['name'];
 $tmp_doc_dir = $_FILES['document']['tmp_name'];
 
 if($docFile) {
-  unlink($doc_folder.$edit_row['image']);
+  unlink($doc_folder.$edit_row['document']);
   move_uploaded_file($tmp_doc_dir,$upload_file);
 } else {
   $upload_file = $pdoc;
@@ -63,6 +63,4 @@ if($pdoUpdate){
 }else{
   echo 'Data Not Updated';
 }
-
-
 ?>

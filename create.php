@@ -41,7 +41,6 @@ include('assets/includes/header.php');
         <em>Please complete the following fields to be entered into the random selection Davenfund drawing. <br> We encourage you to share your proposal with your direct Supervisor for additional support and awareness. <br> Thank you. </em>
       </div>
 
-
         <input type="text" name="pname" required placeholder="Proposal Name"><br><br>
 
         <input type="text" name="pdept" required placeholder="Department"><br><br>
@@ -58,7 +57,6 @@ include('assets/includes/header.php');
         </div>
         <br>
         <div class="question-container">
-          <!--textarea should be cols="40" when Helvetica Neue Lt-->
           <p class="form-text">How will these funds help improve your role, your department, and/or DU in general?</p>
           <textarea rows="4" cols="35" placeholder="&nbsp;&nbsp;Description" name="pdescription"></textarea>
           <div class="q-box">

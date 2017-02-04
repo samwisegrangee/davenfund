@@ -476,6 +476,19 @@ textarea {
   }
 }
 
+#promo-box {
+  text-align: left;
+}
+
+.promo-text {
+  font-family: 'Steelfish Bold';
+  font-size: 20px;
+}
+
+.promo-text br {
+  height: 25px;
+}
+
 .navbar {
   border: none;
   background-color: #4d4d4d;
@@ -565,6 +578,27 @@ textarea {
   #df-nav-name {
     margin-left: 0;
   }
+}
+
+.promo-box {
+  height: 125px;
+  width: 320px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background-color: black;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.promo-text-box {
+  margin-bottom: 5px;
+}
+
+#promo-box-footer h3, #promo-box-footer p {
+  padding: 10px;
+  margin: 0;
 }
 
 .q-box {
@@ -863,6 +897,9 @@ video {
 @media (max-width: 500px) {
   .gall-head .gall-title {
     width: 66%;
+  }
+  .gall-head .gall-title h1 {
+    font-size: 40px;
   }
 }
 
