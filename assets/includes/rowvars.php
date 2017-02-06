@@ -23,5 +23,6 @@ while ($row = $results->fetch(PDO::FETCH_ASSOC)) {
   $pc = $row['pcomments'];
   $pim = $row['image'];
   $pdoc = $row['document'];
+  $pemail = $row['email'];
 
 }

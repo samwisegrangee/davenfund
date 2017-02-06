@@ -4,12 +4,6 @@
   include('assets/includes/rowvars.php');
   include('assets/includes/header.php');
 ?>
-<div class="promo-box">
-  <h3>Getting some ideas?</h3>
-    <p class="promo-text">
-      Email us at <a href="mailto:davenfund@davenport.edu">davenfund@davenport.edu</a> and we'll let you know when registration is open!
-    </p>
-</div>
 
 <div class="center-container">
   <div class="proposal-container">
@@ -42,11 +36,6 @@
            <h4>$<?php echo $pa ?></h4>
            <h4><?php echo $pr ?></h4>
 
-           <div class="like-box like-it">
-             <img class="like like-outline" src="assets/img/Like Simple - OUTLINE.png" alt="">
-             <img class="like like-block" src="assets/img/Like Simple.png" alt="">
-           </div>
-
           </ul>
        </div>
      </div>
@@ -62,7 +51,12 @@
      <h4>How will you measure the improvements the funds provide?</h4>
      <p><?php echo $pm ?></p>
      <br>
-     <!--<a href="edit.php?id=<?php echo $id ?>">Click Here to Edit</a>-->
+
+      <?php
+      if ($_SESSION['user_id'] == $id) {
+        echo '<a href="edit.php?id='.$id.'">Click Here to Edit</a>';
+      }
+     ?>
 
    </div>
    <a href="everybody.php">

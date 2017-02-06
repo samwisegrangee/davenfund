@@ -39,11 +39,9 @@
 
         <div class="collapse navbar-collapse navHeaderCollapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.php">Sign Out</a></li>
-            <li><a href="form.php">See the Form</a></li>
-            <!--<li><a href="create.php">Create</a></li>-->
-            <!--<li><a href="edit.php">Edit</a></li>-->
+            <li><a href="edit.php?id=<?php echo $_SESSION['user_id']; ?>">Edit Profile</a></li>
             <li><a href="about.php">About</a></li>
+            <li><a href="logout.php">Sign Out</a></li>
           </ul>
         </div>
       </div>

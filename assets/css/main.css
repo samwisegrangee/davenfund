@@ -404,13 +404,6 @@ textarea {
   font-size: 20px;
 }
 
-#login-card,
-#register-card,
-#buffer-card,
-#corner-logo {
-  display: none;
-}
-
 #login-card input,
 #register-card input {
   margin-top: 20px;
@@ -474,19 +467,6 @@ textarea {
   #buffer-card .center-title h1 {
     font-size: 25px;
   }
-}
-
-#promo-box {
-  text-align: left;
-}
-
-.promo-text {
-  font-family: 'Steelfish Bold';
-  font-size: 20px;
-}
-
-.promo-text br {
-  height: 25px;
 }
 
 .navbar {

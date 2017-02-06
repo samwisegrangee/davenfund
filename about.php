@@ -3,8 +3,6 @@ session_start();
 
 include 'assets/includes/header.php';
 ?>
-
-
 <div class="center-container">
   <div class="proposal-container">
     <h2>The Story of DavenFund</h2>
@@ -43,8 +41,7 @@ include 'assets/includes/header.php';
   </div>
 
 </div>
-<div class="corner-logo">
-  <img src="assets/img/5554 Davenfund Logo - Transparent Background.png" alt="">
-</div>
+
+<?php include 'assets/includes/corner-logo.php'; ?>
 
 <?php include 'assets/includes/footer.php'; ?>

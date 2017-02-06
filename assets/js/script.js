@@ -24,36 +24,6 @@ $(document).ready(function() {
   //Bouncing Headers
   $("h1").addClass("animated bounce");
 
-
-  //Bring in the Login Card
-  $('.logo-in').click(function() {
-    $('#corner-logo').fadeIn(300);
-  });
-
-  $('.log-it').click(function() {
-    $('#video-card').fadeOut(100);
-    $('#register-card').fadeOut(100);
-    $('#login-card').fadeIn(300);
-  });
-
-  //Bring in the Register Card
-  $('.reg-it').click(function() {
-    $('#login-card').fadeOut(100);
-    $('#register-card').fadeIn(300);
-  });
-
-  //Bring in the Buffer Card
-  $('.buff-it').click(function() {
-    $('#register-card').fadeOut(100);
-    $('#buffer-card').fadeIn(300);
-  });
-
-  //Bring in the Register Card
-  //$('.like-it').click(function() {
-  //  $('.like-outline').fadeOut(100);
-  //  $('.like-block').fadeIn(300);
-  //});
-
   //Shuffle Gallery
   $(function () {
     var parent = $("#shuffle");
