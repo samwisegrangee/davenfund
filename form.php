@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include('assets/includes/header.php');
 
 ?>

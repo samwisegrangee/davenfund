@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include('assets/includes/db.php');
 
 include('assets/includes/postvars.php');
@@ -58,8 +58,8 @@ $pdoUpdate->execute();
 // check if mysql update query successfu
 if($pdoUpdate){
   //echo '<br>Data Updated';
-  header('Location: everybody.php');
   //header('Location: profile.php?id=.$id.);
+  header('Location: everybody.php');
 }else{
   echo 'Data Not Updated';
 }

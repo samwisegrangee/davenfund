@@ -1,4 +1,8 @@
-<?php include 'assets/includes/header.php'; ?>
+<?php
+session_start();
+
+include 'assets/includes/header.php';
+?>
 
 
 <div class="center-container">
@@ -12,10 +16,8 @@
     <div class="about-cover" class="half-holder" id="about-background"style="background-image: url('assets/img/DavenFund-Committee-Grayscale.jpg'); background-size: contain;">
       <div class="about-cover-text-container">
         <h1>The DavenFund Story</h1>
-
       </div>
     </div>
-
 
    <div class="prop-answer-container">
      <p>When we started DavenFund, the idea was to help Davenport employees successfully get funding for any conferences, software or equipment that sometimes get overlooked with many competing financial priorities. Overall, we wanted to help employees improve what they do here at Davenport.</p>

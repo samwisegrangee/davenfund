@@ -1,4 +1,6 @@
 <?php
+  session_start();
+  
   include('assets/includes/db.php');
 
   include('assets/includes/rowvars.php');

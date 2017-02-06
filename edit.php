@@ -1,11 +1,9 @@
 <?php
+session_start();
 
 include('assets/includes/db.php');
-
-include 'assets/includes/header.php';
-
 include 'assets/includes/rowvars.php';
-
+include 'assets/includes/header.php';
 ?>
 
 <div class="center-container field-box">

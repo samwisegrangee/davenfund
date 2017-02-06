@@ -1,9 +1,9 @@
 <?php
+  session_start();
 
   include('assets/includes/db.php');
 
   include ('assets/includes/header.php');
-
 ?>
 
 <div class="video-container">

@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 if(isset($_POST['insert']))
 {
@@ -20,14 +21,11 @@ if(isset($_POST['insert']))
   // check if mysql insert query successful
   if($pdoExec){
     header('Location: everybody.php');
-      //echo 'Data Inserted';
   }else{
       echo 'Data Not Inserted';
   }
 }
-
 include('assets/includes/header.php');
-
 ?>
 
 <div class="center-container field-box">
