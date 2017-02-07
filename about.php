@@ -5,7 +5,7 @@ include 'assets/includes/header.php';
 ?>
 <div class="center-container">
   <div class="proposal-container">
-    <h2>The Story of DavenFund</h2>
+    <div class="lil-space"></div>
     <div class="proposal-title">
       <div class="blue-box"></div>
       <div class="yellow-box"></div>

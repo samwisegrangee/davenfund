@@ -226,6 +226,10 @@ button:hover {
   }
 }
 
+.lil-space {
+  height: 20px;
+}
+
 .center-title {
   margin-top: 100px;
   padding: 20px;
@@ -362,6 +366,15 @@ a, li a {
   font-size: 24px;
 }
 
+label {
+  color: transparent;
+}
+
+.radio-label {
+  color: white;
+  display: block;
+}
+
 input[type="text"], input[type="password"], input[type="number"] {
   outline: none;
   padding: 10px;
@@ -469,6 +482,10 @@ textarea {
   }
 }
 
+.nav li a {
+  padding: 10px;
+}
+
 .navbar {
   border: none;
   background-color: #4d4d4d;
@@ -539,7 +556,6 @@ textarea {
 }
 
 #df-nav-name {
-  margin-left: 23px;
   color: #eee;
   background-color: #cf1c10;
 }
@@ -548,28 +564,30 @@ textarea {
   display: none;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 800px) {
   .nav-it .long-logo {
     display: none;
   }
   .nav-it .short-logo {
     display: inline;
   }
-  #df-nav-name {
-    margin-left: 0;
-  }
 }
 
 .promo-box {
-  height: 125px;
-  width: 320px;
+  height: 80px;
+  width: 220px;
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 3px;
+  left: 3px;
   z-index: 1;
   background-color: black;
+  opacity: 0.8;
   text-align: center;
   border-radius: 5px;
+}
+
+.promo-box:hover {
+  opacity: 1;
 }
 
 .promo-text-box {
@@ -577,7 +595,7 @@ textarea {
 }
 
 #promo-box-footer h3, #promo-box-footer p {
-  padding: 10px;
+  padding: 0;
   margin: 0;
 }
 
@@ -819,15 +837,16 @@ video {
   /*font-size: 50px*/
 }
 
-.like {
-  margin-top: 30px;
-  height: 30px;
-  width: auto;
-  cursor: pointer;
+.gall-undertitle {
+  text-align: center;
+  color: #eee;
+  background-color: black;
 }
 
-.like-block {
-  display: none;
+.gall-undertitle h2 {
+  padding: 10px;
+  margin-top: -1px;
+  margin-bottom: -1px;
 }
 
 .overlay-logo {
@@ -874,12 +893,18 @@ video {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .gall-head .gall-title {
     width: 66%;
   }
-  .gall-head .gall-title h1 {
+}
+
+@media (max-width: 400px) {
+  .gall-title h1 {
     font-size: 40px;
+  }
+  .gall-undertitle h2 {
+    font-size: 25px;
   }
 }
 

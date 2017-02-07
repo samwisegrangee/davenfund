@@ -14,17 +14,17 @@
 
 		if( $stmt->execute() ):
 			$_SESSION['user_email'] = $_POST['email'];
-			header("Location: everybody.php");
+			header("Location: buffer.php");
 		else:
 			echo 'Sorry there must have been an issue creating your account';
 		endif;
 	endif;
-	include('assets/includes/header.php');
+	include('assets/includes/alt-header.php');
 ?>
 
  <div class="video-container">
    <video loop muted autoplay>
-     <source src="assets/img/employee_loop.mp4" type="video/mp4">
+     <source src="assets/img/small-employee-loop.mp4" type="video/mp4">
    </video>
 
    <div class="center-container field-box">
@@ -34,10 +34,10 @@
      </div>
      <div class="center-form">
 			 	<form method="POST">
- 					<input type="text" placeholder="Enter your email" name="email"><br>
- 					<input type="password" placeholder="and password" name="password"><br>
- 					<input type="password" placeholder="confirm password" name="confirm_password"><br>
- 					<input type="submit">
+ 					<label for="email">Email<input type="text" placeholder="Enter your email" name="email" id="email"><br>
+ 					<label for="password">Password<input type="password" placeholder="and password" name="password"id="password"><br>
+ 					<label for="confirm_password">Confirm Password<input type="password" placeholder="confirm password" name="confirm_password" id="confirm_password"><br>
+ 					<input type="submit" value="Submit">
  				</form>
      </div>
    </div>

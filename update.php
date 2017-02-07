@@ -16,8 +16,28 @@ $imgSize = $_FILES['image']['size'];
 
 $upload_image = $folder . basename($imgFile);
 
+
 if($imgFile) {
-  unlink($folder.$edit_row['image']);
+  //Get Image Size
+  $size = getimagesize($tmp_dir);
+  $ratio = $size[0]/$size[1]; // width/height
+
+  if( $ratio > 1) {
+      $width = 400;
+      $height = 400/$ratio;
+  }
+  else {
+      $width = 400*$ratio;
+      $height = 400;
+  }
+  //Resize Image
+  $src = imagecreatefromstring(file_get_contents($tmp_dir));
+  $dst = imagecreatetruecolor($width,$height);
+  imagecopyresampled($dst,$src,0,0,0,0,$width,$height,$size[0],$size[1]);
+  imagedestroy($src);
+  imagejpeg($dst, $tmp_dir);
+
+  //Move Image
   move_uploaded_file($tmp_dir,$upload_image);
 } else {
   $upload_image = $pim;
@@ -28,7 +48,7 @@ $docFile = $_FILES['document']['name'];
 $tmp_doc_dir = $_FILES['document']['tmp_name'];
 
 if($docFile) {
-  unlink($doc_folder.$edit_row['document']);
+  //unlink($doc_folder.$pdoc);
   move_uploaded_file($tmp_doc_dir,$upload_file);
 } else {
   $upload_file = $pdoc;
@@ -53,11 +73,8 @@ $pdoUpdate->bindParam(':document', $upload_file, PDO::PARAM_STR);
 
 $pdoUpdate->execute();
 
-//
 
-// check if mysql update query successfu
 if($pdoUpdate){
-  //echo '<br>Data Updated';
   //header('Location: profile.php?id=.$id.);
   header('Location: everybody.php');
 }else{

@@ -18,12 +18,15 @@
        <div class="box-text twin l-twin">
           <img class="profile-img"
           <?php
-            if ($pim == "uploaded_images/") {
-              echo "src='assets/img/df-logo-white.png'";
-            } else {
-              echo "src='$pim'";
-            }
-            ?>
+              if ($pim == "uploaded_images/") {
+                echo "src='assets/img/df-logo-white.png'";
+              } elseif ($pim == "") {
+                echo "src='assets/img/df-logo-white.png'";
+              }
+              else {
+                echo "src='$pim'";
+              }
+              ?>
           alt="">
        </div>
      </div>

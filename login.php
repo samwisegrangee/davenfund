@@ -21,11 +21,11 @@
 			echo "Sorry those credentials do not match.";
 		}
 	endif;
-	include('assets/includes/header.php');
+	include('assets/includes/alt-header.php');
 ?>
 <div class="video-container">
   <video loop muted autoplay>
-    <source src="assets/img/employee_loop.mp4" type="video/mp4">
+    <source src="assets/img/small-employee-loop.mp4" type="video/mp4">
   </video>
 
   <div class="center-container field-box card" id="login-card">
@@ -35,9 +35,9 @@
     </div>
     <div class="center-form">
       <form action="login.php" method="POST">
-        <input type="text" placeholder="Enter your email" name="email">
-        <input type="password" placeholder="and password" name="password">
-        <input type="submit">
+        <label for="email">Email<input type="text" placeholder="Enter your email" name="email" id="email"></label>
+        <label for="password">Password<input type="password" placeholder="and password" name="password" id="password"></label>
+        <input type="submit" value="Submit">
       </form>
     </div>
   </div>

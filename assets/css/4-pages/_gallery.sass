@@ -41,14 +41,15 @@
       padding-top: 25px
       /*font-size: 50px*/
 
-.like
-  margin-top: 30px
-  height: 30px
-  width: auto
-  cursor: pointer
+.gall-undertitle
+  text-align: center
+  color: #eee
+  background-color: $du-p-black
 
-.like-block
-  display: none
+  h2
+    padding: 10px
+    margin-top: -1px
+    margin-bottom: -1px
 
 .overlay-logo
   position: absolute
@@ -90,9 +91,12 @@
   .box .overlay
     opacity: 1
 
-@media (max-width: 500px)
+@media (max-width: 900px)
   .gall-head .gall-title
     width: 66%
 
-    h1
+@media (max-width: 400px)
+  .gall-title h1
       font-size: 40px
+  .gall-undertitle h2
+      font-size: 25px

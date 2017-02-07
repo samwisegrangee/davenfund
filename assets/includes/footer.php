@@ -1,8 +1,9 @@
     </div>
+
   </body>
 
   <footer>
-    <p>Built by <a href="https://www.samwisegrangee.com" target="_blank">Sam Granger</a></p>
+    <p>Questions: <a href="davenfund@davenport.edu">davenfund@davenport.edu</a> // Site by <a href="https://www.samwisegrangee.com" target="_blank">Sam Granger</a></p>
   </footer>
 
   <script type="text/javascript" src="assets/js/jquery-3.0.0.min.js"></script>﻿

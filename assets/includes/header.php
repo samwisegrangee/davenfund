@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
     <title>Davenfund</title>
@@ -16,31 +16,28 @@
 
 
           <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="df-nav-name">
-              <img src="assets/img/DavenFund Text Menu.png" alt="">
-            </button>
-            <ul class="dropdown-menu">
-              <li><a href="index.php">Home</a></li>
-              <li><a href="about.php">About</a></li>
-              <li><a href="everybody.php">Gallery</a></li>
-            </ul>
+            <div class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="df-nav-name">
+              <img src="assets/img/DavenFund Text Menu.png" alt="Davenfund Logo">
+            </div>
           </div>
           <div class="nav-it">
-              <img src="assets/img/DU Logo Center Navbar.png" class="long-logo">
-              <img src="assets/img/White DU.png" class="short-logo">
+              <img src="assets/img/DU Logo Center Navbar.png" class="long-logo" alt="Davenport long logo">
+              <img src="assets/img/White DU.png" class="short-logo" alt="Davenport short logo">
           </div>
 
-          <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+          <div class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
+          </div>
         </div>
 
         <div class="collapse navbar-collapse navHeaderCollapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="edit.php?id=<?php echo $_SESSION['user_id']; ?>">Edit Profile</a></li>
+            <li><a href="edit.php?id=<?php echo $_SESSION['user_id']; ?>">Edit</a></li>
             <li><a href="about.php">About</a></li>
+            <li><a href="everybody.php">Gallery</a></li>
+            <li><a href="faq.php">FAQ</a></li>
             <li><a href="logout.php">Sign Out</a></li>
           </ul>
         </div>
