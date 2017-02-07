@@ -1,3 +1,5 @@
 <div class="corner-logo" id="corner-logo">
-  <img src="assets/img/5554 Davenfund Logo - Transparent Background.png" alt="">
+  <a href="everybody.php">
+    <img src="assets/img/5554 Davenfund Logo - Transparent Background.png" alt="Click for Gallery">
+  </a>
 </div>

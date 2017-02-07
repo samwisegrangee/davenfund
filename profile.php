@@ -27,7 +27,7 @@
                 echo "src='$pim'";
               }
               ?>
-          alt="">
+          alt="Profile Image">
        </div>
      </div>
 
@@ -64,7 +64,7 @@
    </div>
    <a href="everybody.php">
      <div class="gall-back">
-       <img src="assets/img/5554 Davenfund Logo - Transparent Background.png" alt="">
+       <img src="assets/img/5554 Davenfund Logo - Transparent Background.png" alt="Click for Gallery">
        <p>Return to Gallery</p>
      </div>
    </a>

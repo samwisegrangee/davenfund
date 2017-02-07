@@ -25,22 +25,8 @@
               <img src="assets/img/White DU.png" class="short-logo" alt="Davenport short logo">
           </div>
 
-          <div class="navbar-toggle" value=" " data-toggle="collapse" data-target=".navHeaderCollapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </div>
         </div>
 
-        <div class="collapse navbar-collapse navHeaderCollapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="edit.php?id=<?php echo $_SESSION['user_id']; ?>">Edit</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="everybody.php">Gallery</a></li>
-            <li><a href="faq.php">FAQ</a></li>
-            <li><a href="logout.php">Sign Out</a></li>
-          </ul>
-        </div>
       </div>
 
     </div>

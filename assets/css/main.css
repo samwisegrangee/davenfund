@@ -367,11 +367,12 @@ a, li a {
 }
 
 label {
-  color: transparent;
+  font-size: 0px;
 }
 
 .radio-label {
   color: white;
+  font-size: inherit;
   display: block;
 }
 
@@ -698,6 +699,12 @@ video {
 
 .video-overlay-content button {
   margin-top: 25px;
+}
+
+@media (max-width: 425px) {
+  video {
+    display: none;
+  }
 }
 
 .about-cover {

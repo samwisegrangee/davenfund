@@ -11,7 +11,7 @@ include 'assets/includes/header.php';
       <div class="yellow-box"></div>
       <div class="green-box"></div>
     </div>
-    <div class="about-cover" class="half-holder" id="about-background"style="background-image: url('assets/img/DavenFund-Committee-Grayscale.jpg'); background-size: contain;">
+    <div class="about-cover" class="half-holder" id="about-background" style="background-image: url('assets/img/Davenport_University_Lettinga_Campus_2.jpg'); background-size: cover; background-position: 50% 25%;" alt="Davenfund Committee">
       <div class="about-cover-text-container">
         <h1>DavenFund Program Rules and Process</h1>
       </div>

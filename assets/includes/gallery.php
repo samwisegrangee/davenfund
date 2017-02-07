@@ -28,7 +28,7 @@
           <p>$<?php echo $row['pamount']; ?></p>
         </div>
         <div class="lower-third">
-          <img class="overlay-logo" src="assets/img/df-logo-white.png" alt="">
+          <img class="overlay-logo" src="assets/img/df-logo-white.png" alt="Davenfund Logo">
         </div>
       </a>
     </div>

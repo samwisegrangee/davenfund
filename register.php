@@ -34,9 +34,9 @@
      </div>
      <div class="center-form">
 			 	<form method="POST">
- 					<label for="email">Email<input type="text" placeholder="Enter your email" name="email" id="email"><br>
- 					<label for="password">Password<input type="password" placeholder="and password" name="password"id="password"><br>
- 					<label for="confirm_password">Confirm Password<input type="password" placeholder="confirm password" name="confirm_password" id="confirm_password"><br>
+ 					<label for="email">Email<input type="text" placeholder="Enter your email" name="email" id="email"><br><div class="lil-space"></div>
+ 					<label for="password">Password<br><input type="password" placeholder="and password" name="password"id="password"><br><div class="lil-space"></div>
+ 					<label for="confirm_password">Confirm Password<br><input type="password" placeholder="confirm password" name="confirm_password" id="confirm_password"><br><div class="lil-space"></div>
  					<input type="submit" value="Submit">
  				</form>
      </div>
